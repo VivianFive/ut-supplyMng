@@ -1,0 +1,214 @@
+html,body,#app{
+  height: 100%;
+  font-size: 14px;
+  font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+}
+.main-container{
+  width: 1170px;
+  margin: 0 auto;
+}
+.ivu-table .single-row td{
+  background: #E3E3E3;
+}
+.ivu-table .double-row td{
+  background:  #F4F4F4;
+}
+#app .ivu-table th{
+  background: #00BA9C;
+  color: #ffffff;
+  height: 50px;
+}
+#app .ivu-table{
+  font-size: 14px;
+}
+//======================radio=====================
+.radio-group{
+  position: relative;
+  display: inline-block;
+  margin: 0 20px;
+  > input{
+    position: absolute;
+    z-index: -9999;
+    &:checked + label{
+      border: 1px solid #00BA9C;
+      color: #00BA9C;
+    }
+  }
+  > label{
+    display: inline-block;
+    border: 1px solid #DFDFDF;
+    border-radius: 4px;
+    padding: 3px 10px;
+    color: #DFDFDF;
+    cursor: pointer;
+    margin: 0 3px;
+  }
+}
+//=================================btn=========================
+.search-btn{
+  border: 1px solid #00BA9C;
+  color: #00BA9C;
+  border-radius: 4px;
+  padding: 3px 20px;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+}
+.page{
+  margin: 20px 0;
+  text-align: right;
+}
+// 覆盖page 样式
+/*#dashboard .ivu-page-item,
+#vip .ivu-page-item,
+#dashboard .ivu-page-item-jump-next,
+#vip .ivu-page-item-jump-next,
+#dashboard .ivu-page-item-jump-prev,
+#vip .ivu-page-item-jump-prev,
+#dashboard .ivu-page-next,
+#vip .ivu-page-next,
+#dashboard .ivu-page-prev,
+#vip .ivu-page-prev,
+#dashboard .ivu-page-options-elevator input,
+#vip .ivu-page-options-elevator input
+{
+  background: #F4F4F4;
+  border: none;
+}
+#dashboard .ivu-page-item a,
+#vip .ivu-page-item a,
+#dashboard .ivu-page-options-elevator,
+#vip .ivu-page-options-elevator,
+#dashboard .ivu-page-options-elevator input,
+#vip .ivu-page-options-elevator input{
+  color: #AAABAB;
+}
+#dashboard .ivu-page-item-active,
+#vip .ivu-page-item-active{
+  background: #00BA9C;
+  > a{
+    color: #ffffff;
+  }
+}*/
+#app .ivu-page-item,
+#app .ivu-page-item-jump-next,
+#app .ivu-page-item-jump-prev,
+#app .ivu-page-next,
+#app .ivu-page-prev,
+#app .ivu-page-options-elevator input
+{
+  background: #F4F4F4;
+  border: none;
+}
+#app .ivu-page-item a,
+#app .ivu-page-options-elevator,
+#app .ivu-page-options-elevator input{
+  color: #AAABAB;
+}
+#app .ivu-page-item-active{
+  background: #00BA9C;
+  > a{
+    color: #ffffff;
+  }
+}
+.export-btn{
+  display: inline-block;
+  height: 30px;
+}
+
+.com-settings-header {
+  padding: 5px;
+  position: relative;
+  margin: 15px 0;
+
+  h4 {
+    margin-right: 15px;
+    border-left: 4px solid #80848F;
+    padding-left: 10px;
+    font-size: 13px;
+    color:#80848F
+  }
+}
+
+
+.link-active{
+  border-bottom: 5px solid #ffffff;
+}
+.menu-active{
+  color: #ffffff;
+}
+
+.filter-box, .dashboard-data{
+  background: #F4F4F4;
+}
+.dashboard-data{
+  padding: 20px 0;
+  margin: 20px 0;
+}
+.info-ul{
+  display: flex;
+  > li{
+    flex: 1;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+
+    > label{
+      cursor: pointer;
+      > b {
+        font-size: 24px;
+      }
+      > span{
+        display: block;
+      }
+    }
+    > input {
+      position: absolute;
+      z-index: -999;
+      &:checked + label{
+        color: #00BA9C;
+      }
+    }
+  }
+  > li:not(:last-child){
+    border-right: 3px solid #EAEAEA;
+  }
+}
+
+.filter-ul{
+  display: flex;
+  > li{
+    position: relative;
+    >label{
+      display: inline-block;
+      height: 23px;
+      width: 70px;
+      text-align: center;
+      border: 1px solid #dddee1;
+      border-radius: 4px;
+      line-height: 23px;
+      margin: 0 5px;
+    }
+    >input{
+      position: absolute;
+      z-index: -999;
+      &:checked + label{
+        background: #00BA9C;
+        color: #fff;
+        border: none;
+      }
+    }
+  }
+}
+.box-style{
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#orderInfo .ivu-timeline-item-tail{
+  border-left:1px dashed #AAAAAA;
+}
